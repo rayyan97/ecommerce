@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,3 +37,9 @@ Route::get('shopping-cart', function () {
 Route::get('checkout', function () {
     return view('pages.checkout.index');
 })->name('checkout.index');
+Route::get('admin/dashboard', function () {
+    return view('admin.dashboard')->name('admin.dashboard');
+});
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

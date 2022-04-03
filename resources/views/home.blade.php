@@ -10,7 +10,7 @@
 
 @include('partials.products')
 
-@include('partials.sale_section')
+{{-- @include('partials.sale_section') --}}
 
     <!-- Instagram Section Begin -->
     {{-- <section class="instagram spad">
@@ -39,6 +39,6 @@
     </section> --}}
     <!-- Instagram Section End -->
 
-@include('partials.blogs')
+{{-- @include('partials.blogs') --}}
 
 @endsection
