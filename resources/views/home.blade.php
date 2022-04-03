@@ -10,7 +10,7 @@
 
 @include('partials.products')
 
-@include('partials.sale_section')
+{{-- @include('partials.sale_section') --}}
 
     <!-- Instagram Section Begin -->
     {{-- <section class="instagram spad">
